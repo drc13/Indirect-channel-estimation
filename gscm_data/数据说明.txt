@@ -1,0 +1,11 @@
+basic_conf.mat
+	N_Scatter:散射体数目
+	N_SBS:Small BS数目
+	x_SBS，y_SBS,z_SBS：Small BS三维坐标数组
+	x_Scatter,y_Scatter,z_Scatter：散射体三维坐标数组
+
+data_with_Xantennas.mat——X表示Macro BS天线数目
+	N_MS:MS数目，目前是100
+	x_MS,y_MS,z_MS：MS三维坐标数组
+	H_MBS(i_MS,m)：计算得到的第i_MS个MS在MBS的第m根天线上的信道冲击响应
+	H_SBS(i_MS,i_SBS)：计算得到的第i_MS个MS在第i_SBS个SBS上的信道冲击响应
