@@ -1,5 +1,7 @@
 N_MSscatter=12;
 N_MBSscatter=4;
+% N_MSscatter=0;
+% N_MBSscatter=0;
 r_MBSscatter=zeros(1,N_MBSscatter);
 phi_MBSscatter=zeros(1,N_MBSscatter);
 x_MBSscatter=zeros(1,N_MBSscatter);
@@ -17,7 +19,8 @@ r_MS=200+rand*500;
 phi_MS=rand*2*pi;
 x_MS=r_MS*cos(phi_MS);
 y_MS=r_MS*sin(phi_MS);
-z_MS=-10+20*rand;
+z_MS=-10+20*rand; % not on the same scale with x and y
+% z_MS=-100+200*rand;
 r_MSscatter=zeros(1,N_MSscatter);
 phi_MSscatter=zeros(1,N_MSscatter);
 x_MSscatter=zeros(1,N_MSscatter);
